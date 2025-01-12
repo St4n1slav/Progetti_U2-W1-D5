@@ -9,16 +9,18 @@ header {
   padding: 20px 10px;
   text-align: center;
   color: #080808;
+  padding-bottom: 0%;
+  width: 100%;
 }
 
 header nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1rem 0px;
 }
 
 .logoContainer {
+  display: flex;
   flex: 1;
 }
 
@@ -30,6 +32,7 @@ header nav {
   display: flex;
   gap: 15px;
   list-style: none;
+  padding-right: 10rem;
 }
 
 .listaNav li a {
@@ -40,7 +43,7 @@ header nav {
 
 .startBtn .listaNav {
   color: #fff;
-  background-color: #000;
+  background-color: black;
   padding: 5px 10px;
   border-radius: 20px;
   text-decoration: none;
@@ -50,21 +53,41 @@ header nav {
   background-color: #333;
 }
 
+.titCont {
+  min-width: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .title {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 20px 0;
+  font-family: "Charter", serif;
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.startBtn {
+  color: white !important;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .startBtn2 {
-  background-color: #000;
+  background-color: black;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 1rem;
   border: none;
   border-radius: 20px;
@@ -76,8 +99,19 @@ header nav {
 }
 
 hr {
-  border: 1px solid #000;
-  width: 100%;
+  border: 1px solid black;
+  width: 200%;
+  margin-left: -20rem;
+  margin-bottom: 0%;
+}
+
+.line {
+  border: 1px solid #757575;
+}
+
+.halfLine {
+  margin-left: 0%;
+  border: 1px solid #757575;
 }
 
 .Mcontainer {
@@ -87,6 +121,8 @@ hr {
 }
 
 .M {
+  position: absolute;
+  right: -4rem;
   height: 100%;
   width: 50%;
 }
@@ -96,6 +132,7 @@ hr {
   width: 100%;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 
 .sectionTitle {
@@ -105,14 +142,22 @@ hr {
   align-items: center;
 }
 
+#h5 {
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+}
+
 .sectionElement {
   display: flex;
   min-width: 20rem;
+  width: 33%;
+  height: 6rem;
 }
 
 .sectionBody {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 .sectionIMG {
@@ -142,21 +187,30 @@ hr {
 .sectionNumber {
   font-size: 1.5rem;
   color: #e6e7e7;
+  margin: 0.5rem;
 }
 
 .author {
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: bold;
+  padding-left: 0.5rem;
 }
 
 .sectionTitleTitle {
   font-weight: bolder;
+  margin-top: 0.5rem;
+}
+
+.authorImg {
+  border-radius: 50%;
+  max-width: 2rem;
 }
 
 .date {
   font-size: 0.8rem;
   color: #757575;
-  margin-top: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .section2Title {

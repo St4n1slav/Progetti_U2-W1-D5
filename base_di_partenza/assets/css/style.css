@@ -29,6 +29,8 @@ nav {
   top: 0;
   width: 100%;
   background: white;
+  background: inherit;
+  z-index: 1;
 }
 
 .logoContainer {
